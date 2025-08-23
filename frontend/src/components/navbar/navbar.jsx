@@ -10,7 +10,8 @@ const handleCartClick = () => {
 function Navbar(){
     return (
     <div className='nav-elements'>
-      <button className='logo'><img src="../../public/logo.svg" alt="Logo" /></button>
+        {/* <button className='logo'><img src="../../public/logo.svg" alt="Logo" /></button> */}
+      <Link to="/"><button className='logo'><img src="../../public/logo.svg" alt="Logo" /></button></Link>
       <div className='nav-links'>
             <Link to="/"><button><p>Home</p></button></Link>
             <Link to="/products"><button><p>Products</p></button></Link>
