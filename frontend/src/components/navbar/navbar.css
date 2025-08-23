@@ -42,6 +42,10 @@
     height: 4rem;
 }
 
+.logo:focus {
+    outline: none;
+}
+
 .cart-button{
     height: 4rem;
     width: 4rem;
@@ -66,7 +70,12 @@
     color: var(--soft-blue);
     background-image: linear-gradient(to top, var(--light-blue), var(--sky-blue));
     transition-duration: 0.5s;
-    
+}
+.nav-links button:focus{
+    outline: none;
+}
+.nav-links p:active{
+    background-image: linear-gradient(to bottom, var(--light-blue), var(--sky-blue));
 }
 
 .cart-button:hover{
@@ -74,7 +83,15 @@
     transition-duration: 0.5s;
     }
      
-    
+.cart-button:focus{
+    outline: none;
+}
+
+.cart-button:active{
+    background-image: linear-gradient(to bottom, var(--light-blue), var(--sky-blue));
+}
+
+
 .cart:hover{
     transition-duration: 0.5s;
     filter: brightness(0) saturate(100%) invert(100%) sepia(35%) saturate(5729%) hue-rotate(177deg) brightness(111%) contrast(102%);
