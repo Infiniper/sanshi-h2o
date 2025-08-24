@@ -113,40 +113,6 @@
   margin: 40px auto;
 }
 
-/* Placeholder for individual product cards */
-.product-card {
-  border: 1px solid #eee;
-  border-radius: 12px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-.product-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.product-card-content {
-  padding: 1.5rem;
-}
-
-.product-card-content h3 {
-  font-size: 1.5rem;
-  margin: 0 0 0.5rem 0;
-}
-
-.product-card-content p {
-  color: #6B7280;
-  margin-bottom: 1rem;
-}
 
 .view-all-button {
   padding: 12px 24px;
@@ -165,37 +131,75 @@
   color: white;
 }
 
+
+
+/* block 3 */
+
 .features-section {
-  background-color: #EAF8FF; /* Soft blue background */
+  background-color: var(--soft-blue); /* Soft blue background */
+  padding: 2rem;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  /* margin-bottom: 1rem; */
+  font-weight: bold;
+  background-color: var(--soft-blue); /* Soft blue background */
+}
+
+.features-section p{
+  font-size: 1.1rem;
+  margin: 0px;
+  padding: 0px;
 }
 
 .features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0rem;
 }
 
 .feature-item {
-  text-align: center;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
 
 .feature-item .icon {
   font-size: 3rem; /* Placeholder for icon font or SVG */
   color: #0077CC;
   margin-bottom: 1rem;
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
 }
 
-.feature-item h3 {
-  font-size: 1.5rem;
+.feature-item svg{
+  height: 50px;
+  width: 50px;
+}
+
+.feature-item h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
   margin-bottom: 0.5rem;
+  color: var(--primary-blue);
 }
 
 .feature-item p {
   color: #6B7280;
   line-height: 1.6;
+  width: 18rem;
 }
 
 
@@ -208,4 +212,25 @@
 .content-section h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+}
+
+
+
+
+
+/* responsiveness */
+
+@media (max-width: 768px) {
+  .hero-content img {
+    height: 14rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: var(--light-blue);
+}
+
+.video-container video {
+  width: 100%;
+  height: 90%;
+  object-fit: cover; /* Ensures the video covers the area without distortion */
+}
 }

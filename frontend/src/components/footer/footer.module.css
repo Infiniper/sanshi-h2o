@@ -13,6 +13,7 @@
   gap: 2rem; /* Adds space between grid items */
   padding: 3rem 2rem;
   background-color: var(--primary-blue);
+  /* background-image: linear-gradient(to top, #015fa2, var(--primary-blue)); */
   color: var(--soft-blue);
 
   /* Default desktop layout: 4 columns */
