@@ -148,17 +148,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    
-    /* Sets the transition for a smooth animation */
-    transition: transform 1s ease-in-out; 
-    
-    /* Ensure the content is clipped, but this is less critical here since the element is moved */
+    justify-content: flex-start;
+    transition: transform 0.5s ease-in-out;
     overflow-x: hidden; 
 }
-
 .nav-links.active {
-    /* Moves the element to its final, visible state */
     transform: translateX(0); 
 }
 
