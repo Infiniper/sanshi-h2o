@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.description}>
         <img
-          src="/sanshi_h2o_logo.svg"
+          src="/h2o_logo.svg"
           alt="Sanshi H2O Logo"
           className={styles.logo}
         />
