@@ -34,6 +34,7 @@ function Navbar() {
             </button>
         </div>
     );
+    
 }
 
 export default Navbar;
