@@ -7,7 +7,6 @@ import Products from './pages/products.jsx'; // Example page component
 import About from './pages/About'; // Example page component
 import Contact from './pages/Contact'; // Example page component
 
-import CategoryCard from './components/category_card/category_card.jsx';
 
 function App() {
   return (
