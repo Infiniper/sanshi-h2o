@@ -2,26 +2,29 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import CategoryCard from '../../components/category_card/category_card';
 import React, { useEffect, useState } from "react";
+import axios from 'axios';
 
 function Home() {
-    // const [categories, setCategories] = useState([]);
+    const [categories, setCategories] = useState([]);
 
-    // useEffect(() => {
-    //     const fetchCategories = async () => {
-    //         try {
-    //             const response = await API.get("/categories"); // Fetch data from backend
-    //             // const response = await axios.get('http://localhost:5000/api/categories');
-    //             console.log("printing response.data: ", response.data);
-    //             setCategories(response.data);
-    //             console.log("Fetched Category Data: ", categories);
+    useEffect(() => {
+        const fetchCategories = async () => {
+            try {
+                const response = await axios.get('http://localhost:5000/api/categories'); // Fetch data from backend
+                // const response = await axios.get('http://localhost:5000/api/categories');
+                console.log("printing response.data: ", response.data);
+                if (response.data && response.data.categories) {
+                    setCategories(response.data.categories);
+                }
+                console.log("Fetched Category Data: ", categories);
 
-    //         } catch (error) {
-    //             console.error("Error fetching categories:", error);
-    //         }
-    //     };
+            } catch (error) {
+                console.error("Error fetching categories:", error);
+            }
+        };
 
-    //     fetchCategories();
-    // }, []);
+        fetchCategories();
+    }, []);
 
 
     return (
@@ -41,16 +44,17 @@ function Home() {
             <div className="products-section">
                 <h2>Our Products</h2>
                 <p>Discover our range of premium beverages</p>
-                {/* <div className="product-grid">
+                <div className="product-grid">
                     {categories.map((item) => {
-                        <CategoryCard
-                            imageUrl={item.image}
+                        return (<CategoryCard
+                            imageUrl={item.image_url}
                             name={item.name}
                             description={item.description}
                             availability={item.availability}
-                        />
+                        />);
+
                     })}
-                </div> */}
+                </div>
                 <Link to = "/products"><button className="view-all-button">View All Products</button></Link> 
                 
             </div>

@@ -9,6 +9,7 @@ function CategoryCard({ imageUrl, name, description, availability }) {
     else {
         avail = "Comming Soon";
     }
+
     return (
         <div className='category-card'>
             <div className='card-image-container'>
