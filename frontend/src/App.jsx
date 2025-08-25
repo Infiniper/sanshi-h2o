@@ -5,7 +5,7 @@ import Footer from './components/footer/footer.jsx';
 import Home from './pages/Home/Home.jsx'; // Example page component
 import Products from './pages/products.jsx'; // Example page component
 import About from './pages/About'; // Example page component
-import Contact from './pages/Contact'; // Example page component
+import Contact from './pages/Contact/Contact.jsx'; // Example page component
 
 
 function App() {
