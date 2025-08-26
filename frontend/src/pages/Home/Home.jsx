@@ -35,7 +35,7 @@ function Home() {
                 </div>
                 <div className="hero-overlay"></div>
                 <div className="hero-content">
-                    <img src="../../public/h2o_logo.svg" alt="logo" />
+                    <img src="h2o_logo.svg" alt="logo" />
                     <Link to="/about"><button className="hero-button">Learn More</button></Link>
                 </div>
             </div>
