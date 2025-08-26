@@ -10,9 +10,9 @@ const validate = (rules) => [
 ];
 
 const contactRules = validate([
-  body('name').trim().isLength({ min: 2 }),
+  body('name').trim().isLength({ min: 1 }),
   body('email').isEmail(),
-  body('message').trim().isLength({ min: 5 })
+  body('message').trim().isLength({ min: 1 })
 ]);
 
 const orderRules = validate([
