@@ -4,7 +4,7 @@ import Navbar from './components/navbar/navbar.jsx';
 import Footer from './components/footer/footer.jsx';
 import Home from './pages/Home/Home.jsx';
 import Products from './pages/products/products.jsx';
-import About from './pages/about/About.jsx';
+import About from './pages/About/About.jsx';
 import Contact from './pages/Contact/Contact.jsx';
 
 
