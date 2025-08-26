@@ -12,7 +12,7 @@ function Products(){
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/products'); // Fetch data from backend
+                const response = await axios.get('https://sanshi-h2o-backend.onrender.com/api/products'); // Fetch data from backend
                 // const response = await axios.get('http://localhost:5000/api/products');
                 console.log("printing response.data: ", response.data);
                 if (response.data && response.data.products) {
