@@ -10,7 +10,7 @@ function Home() {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/categories'); // Fetch data from backend
+                const response = await axios.get('https://sanshi-h2o-backend.onrender.com/api/categories'); // Fetch data from backend
                 // const response = await axios.get('http://localhost:5000/api/categories');
                 console.log("printing response.data: ", response.data);
                 if (response.data && response.data.categories) {

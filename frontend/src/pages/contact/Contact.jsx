@@ -29,7 +29,7 @@ function Contact() {
 
         try {
             // Make a POST request to your backend endpoint
-            const response = await axios.post('http://localhost:5000/api/contact', {
+            const response = await axios.post('https://sanshi-h2o-backend.onrender.com/api/contact', {
                 name: formData.name,
                 email: formData.email,
                 message: formData.message
