@@ -124,7 +124,7 @@ function Contact() {
                         <div className='detail-tiles' style={{ 'background-image': 'linear-gradient(to bottom, white, var(--sky-blue))'}}>
                             <h4>Kartik Singh</h4>
                             <p>Co-Founder & CTO</p>
-                            <p style={{'font-size':'1rem'}}>6306733058</p>
+                            <p style={{'font-size':'1rem'}}>6306733058, 7398997884</p>
                             <p>Technical support, product questions, operations</p>
                         </div>
                         <div className='detail-tiles'>
