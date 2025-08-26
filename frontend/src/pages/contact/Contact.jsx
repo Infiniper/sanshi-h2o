@@ -83,7 +83,7 @@ function Contact() {
                                 placeholder="Enter your Email Address"
                                 value={formData.email}
                                 onChange={handleChange}
-                                required
+                                // required
                             />
                         </div>
                         <div className='elements'>
