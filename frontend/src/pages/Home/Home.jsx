@@ -31,7 +31,7 @@ function Home() {
         <div>
             {/* block 1 */}
             <div className="hero-section">
-                <div className="video-container"><video src="https://aultuptfqvxnjvghqztc.supabase.co/storage/v1/object/sign/videos/WhatsApp%20Video%202025-08-20%20at%2015.57.02.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iNWEzMjExOS1lZWZhLTRmNTktOWQzZi1hZmE2Y2EwZDRkZDEiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ2aWRlb3MvV2hhdHNBcHAgVmlkZW8gMjAyNS0wOC0yMCBhdCAxNS41Ny4wMi5tcDQiLCJpYXQiOjE3NTYwMjE0NzgsImV4cCI6MTc4NzU1NzQ3OH0.0VDEruXn7thdbR1HHLnGT6FnVTG-9TwCkisFWCHULJg" autoPlay loop muted></video>
+                <div className="video-container"><video src="https://aultuptfqvxnjvghqztc.supabase.co/storage/v1/object/public/videos/WhatsApp%20Video%202025-08-20%20at%2015.57.02.mp4" autoPlay loop muted></video>
                 </div>
                 <div className="hero-overlay"></div>
                 <div className="hero-content">
