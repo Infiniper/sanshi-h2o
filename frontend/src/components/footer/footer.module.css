@@ -115,7 +115,9 @@ strong {
 .newsletterButton:hover {
   background-color: var(--sky-blue);
 }
-
+.newsletterButton:focus{
+  outline: none;
+}
 
 /* Copyright and Legal Links */
 .copyright p {
