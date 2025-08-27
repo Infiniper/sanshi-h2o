@@ -9,7 +9,7 @@ function About(){
             <div className='founder-container'>
                 <div className='founder'>
                     <div className='founder-img'>
-                        <img src="../../../public/founder.png" alt="" />
+                        <img src="founder.png" alt="" />
                     </div>
                     <div className='founder-data'>
                         <h3>Rameshwar Singh</h3>
@@ -24,7 +24,7 @@ function About(){
                         <div className='cofounder-msg'><p>As the Co-Founder and CTO of Sanshi H2O, I’m proud to combine technology with nature to bring you the cleanest, most refreshing water. Through advanced filtration systems and sustainable processes, we ensure every drop meets our rigorous standards. Our commitment is not just to purity, but to innovation that makes water smarter, safer, and more accessible for all.</p></div>
                     </div>
                     <div>
-                        <img src="../../../public/cofounder.png" alt="" />
+                        <img src="cofounder.png" alt="" />
                     </div>
                 </div>
 
